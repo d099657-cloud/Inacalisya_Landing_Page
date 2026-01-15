@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+    margin: 0;
+
+    background-image: url("images/marble-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* SECTIONS */
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* HERO */
+.hero-img {
+    width: 85%;
+    max-width: 320px;
+    display: block;
+    margin: 50px auto;
+}
+
+/* PROMO */
+.promo h1 {
+  font-size: 52px;
+  font-family: 'Playfair Display', serif;
+
+}
+
+
+/* GALLERY */
+.gallery {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 46%;
+  border-radius: 8px;
+}
+
+.btn {
+  display: block;          /* makes button a block element */
+  width: 200px;            /* button width */
+  margin: 20px auto;       /* top/bottom = 20px, left/right = auto → centers the button */
+  background: #4a4a4a;
+  color: white;
+  padding: 14px 40px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 15px;
+  letter-spacing: 2px;
+  text-align: center;      /* centers text inside the button */
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #222;
+}
+/* WHATSAPP */
+.whatsapp {
+  background: #fff;
+}
+
+.wa-btn {
+  display: inline-block;
+  margin-top: 15px;
+  background: #25d366;
+  color: white;
+  padding: 14px 40px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* FOOTER */
+footer {
+  font-size: 12px;
+  background: #eee;
+  padding: 15px;
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+  .hero-img {
+    max-width: 400px;
+  }
+
+  .gallery img {
+    width: 300px;
+  }
+}
+
+.wa-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 13px;
+}
